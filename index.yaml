@@ -1,5 +1,33 @@
 apiVersion: v1
 entries:
+  common:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.19.0
+    created: "2024-05-22T19:17:54.080938251Z"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: fbb4e19b0c82e17d5a825820b2f441ffb2705892b46d67dca786adef5f523acc
+    home: https://bitnami.com
+    icon: https://bitnami.com/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: common
+    sources:
+    - https://github.com/bitnami/charts
+    type: library
+    urls:
+    - https://github.com/cbrendanprice/Redis-Stack-Bitnami-Helm-Chart/releases/download/common-2.19.0/common-2.19.0.tgz
+    version: 2.19.0
   redis:
   - annotations:
       category: Database
@@ -32,4 +60,4 @@ entries:
     urls:
     - https://github.com/cbrendanprice/Redis-Stack-Bitnami-Helm-Chart/releases/download/redis-18.19.2/redis-18.19.2.tgz
     version: 18.19.2
-generated: "2024-05-22T18:39:40.887141524Z"
+generated: "2024-05-22T19:17:54.194285152Z"
