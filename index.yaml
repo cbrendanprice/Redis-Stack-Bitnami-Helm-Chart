@@ -6,6 +6,33 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.19.0
+    created: "2024-07-18T22:14:53.334462082Z"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: 352daff06579458131b546c578aa28c902091598d2358361b62d92ccb21b0a4a
+    home: https://bitnami.com
+    icon: https://bitnami.com/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: common
+    sources:
+    - https://github.com/bitnami/charts
+    type: library
+    urls:
+    - https://github.com/cbrendanprice/Redis-Stack-Bitnami-Helm-Chart/releases/download/common-2.19.2-5/common-2.19.2-5.tgz
+    version: 2.19.2-5
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.19.0
     created: "2024-07-18T22:05:28.833978831Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
@@ -200,6 +227,37 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.0
+    created: "2024-07-18T22:14:53.467648169Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: ede825bb861d3da36cb6fb4c7555102b1fe3b9636a59dcd3615f61b9b1ec8608
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://github.com/cbrendanprice/Redis-Stack-Bitnami-Helm-Chart/releases/download/redis-18.19.2-5/redis-18.19.2-5.tgz
+    version: 18.19.2-5
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.0
     created: "2024-07-18T22:05:28.997060615Z"
     dependencies:
     - name: common
@@ -350,4 +408,4 @@ entries:
     urls:
     - https://github.com/cbrendanprice/Redis-Stack-Bitnami-Helm-Chart/releases/download/redis-18.19.2-1/redis-18.19.2-1.tgz
     version: 18.19.2-1
-generated: "2024-07-18T22:05:28.99709477Z"
+generated: "2024-07-18T22:14:53.467700898Z"
